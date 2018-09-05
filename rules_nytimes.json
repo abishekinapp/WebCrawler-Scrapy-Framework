@@ -1,0 +1,28 @@
+{
+    "url_allowed" :  ["https://www.nytimes.com/"],
+
+    "allowed_domains" :[ "www.nytimes.com"],
+    
+    "title" : ["//title/text()","//titl/text()"],
+    
+    "content" : ["//div[@class=#css-1h6whtw#]/p/text()","//titl/text()"],
+    
+    "subtitle" : ["//meta[@name=#description#]/@content","//titl/text()"],
+    
+    "image_details" : ["//div[@class=#css-bsn42l#]/img/@src","//titl/text()"], 
+    
+    "publish_date" : ["//meta[@itemprop=#datePublished#]/@content","//titl/text()" ],
+    
+    "created_date" : ["//meta[@itemprop=#dateModified#]/@content","//titl/text()"],
+    
+    "posts_MonthsOlder" : 6 ,
+    
+    "output_file": "scraped_output.txt",
+
+    
+    
+    
+    
+    "COMMENT" : "replace all the DOUBLE QUOTES comming in between the values in the json data to ( # )"
+
+}

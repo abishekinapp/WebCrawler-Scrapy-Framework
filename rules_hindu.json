@@ -1,0 +1,15 @@
+{
+    "url_allowed" :  ["https://www.thehindu.com/"],
+    "allowed_domains" :[ "www.thehindu.com"],
+    "title" : ["//title/text()","//titl/text()"],
+    "content" : ["//*[contains(@id, 'content-body-')]/p/text()","//titl/text()"],
+    "subtitle" : ["//div[contains(@class, 'article')]/h2/text()","//titl/text()"],
+    "image_details" : ["//img[@class=#media-object adaptive placeholder lead-img#]/@data-proxy-image","//titl/text()"], 
+    "publish_date" : ["//meta[@name=#publish-date#]/@content","//titl/text()" ],
+    "created_date" : ["//meta[@name=#created-date#]/@content","//titl/text()"],
+    "posts_MonthsOlder" : 6 ,
+    "output_file": "scraped_output.txt",
+
+    "COMMENT" : "replace all the DOUBLE QUOTES comming in between the values in the json data to ( # )"
+
+}
